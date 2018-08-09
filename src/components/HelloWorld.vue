@@ -1,6 +1,6 @@
 <template>
-    <div class="hello">
-        {{ msg }}
+    <div v-bind:data-hello="'Hello ' + msg" class="hello">
+        See my "data-hello" attribute in your browser's developer tool
     </div>
 </template>
 
@@ -9,12 +9,12 @@
 
     @Component
     export default class HelloWorld extends Vue {
-        @Prop() private msg: string = "Hello Vue!";
+        @Prop() private msg: string = "Vue!";
     }
 </script>
 
 <style scoped>
     .hello {
-        color: red;
+        border: 1px solid red;
     }
 </style>

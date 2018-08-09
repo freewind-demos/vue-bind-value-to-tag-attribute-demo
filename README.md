@@ -1,16 +1,11 @@
-# vue-typescript-demo
+Vue Bind Value to Tag Attribute Demo
+====================================
 
-## Project setup
 ```
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+打开<http://localhost:8080>后，使用浏览器工具inspect查看该元素的attribute:
+
+![demo](./images/demo.jpg)
